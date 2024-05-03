@@ -1,0 +1,518 @@
+/*
+    #BF7960 --> naranja
+    #F2C4B3 --> naranja claro
+    #733A26 --> marrón claro
+    #401E17 --> marrón oscuro
+    #0D0D0D --> negro
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+/* ejemplo em
+    main {
+        font-size: 1em;
+    }
+    main section {
+        font-size: 1.3em;
+    }
+    main section h1 {
+        font-size: 1.3em;
+    }
+*/
+body {
+    overflow-x: hidden;
+}
+/* header */
+header {
+    background-color: #401E17;
+    padding: 1rem;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a img {
+    width: 11rem;
+    height: 9rem;
+    margin-left: 2rem;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color: #BF7960;
+}
+header nav ul li a:hover, footer nav a svg:hover{
+    color: #F2C4B3;
+}
+.color-icon{
+    color: #BF7960!important;
+}
+/* textos */
+h1 {
+    color: #F2C4B3;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+}
+h2{
+    color: #BF7960;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+}
+h3{
+    color: #BF7960;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    font-size: 1.6rem;
+    color: #733A26;
+}
+a{
+    text-decoration: none;
+}
+/* contenido */
+main{
+    background-color: #0D0D0D;
+    padding-top: 5rem;
+}
+.popup-wpp {
+    width: 5rem;
+    height: 5rem;
+    background-color: green;
+    padding: 0.5rem;
+    border-radius: 70%;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.popup-wpp a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.popup-wpp a svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #733A26;
+    padding: 8rem;
+}
+#nosotros .img {
+    width: 48%;
+}
+#nosotros .text {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#nosotros .text h2 {
+    color: #0D0D0D;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+}
+#nosotros .text p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    font-size: 1.6rem;
+    color: #0D0D0D;
+}
+.cards-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 25%;
+    margin: 5rem;
+    border: 1px solid #BF7960;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card div{
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 20rem;
+    height: 3rem;
+    background-color: #BF7960;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn a {
+    color:#401E17;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.servicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.servicio__textos{
+    width: 48%;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.servicio__imagen{
+    width: 48%;
+    padding: 8rem;
+}
+.servicio__imagen--tradicional{
+    width: 48%;
+    padding: 8rem;
+    order: -1;
+}
+.galeria{
+    display: grid;
+    grid-gap: 1rem;
+}
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+}
+.layout{
+    display: grid;
+}
+.layout header{
+    grid-area: menu;
+}
+.layout .parallax{
+    grid-area: parallax;
+    background-image: url("../assets/cuidados.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layout main{
+    grid-area: contenido;
+    padding: 5rem;
+    justify-self: center;
+}
+article {
+    background-color: #733A26;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+}
+article li, article p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    font-size: 1.6rem;
+    color: #0D0D0D;
+}
+.layout aside{
+    grid-area: publicidad;
+}
+.layout aside img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.layout footer{
+    grid-area: pie;
+}
+input, select {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+textarea {
+    height: 5rem;
+}
+/* .btn-submit{
+    background-color: #733A26;
+    border-radius: 2%;
+    width: 10rem;
+    height: 5rem;
+} */
+/* footer */
+footer {
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    text-align: center;
+}
+footer nav, footer nav a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer nav a svg{
+    color: #BF7960;
+}
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .layout{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 30vh auto 20vh auto;
+        grid-template-areas:
+            "menu"
+            "parallax"
+            "contenido"
+            "publicidad"
+            "pie"
+        ;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    article h2{
+        font-size: 2rem;
+    }
+    article li, article p{
+        font-size: 1.4rem;
+    }
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .galeria img:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(2){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeria img:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .galeria img:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .galeria img:nth-child(5){
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .galeria img:nth-child(6){
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .galeria img:nth-child(7){
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .galeria img:nth-child(8){
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    /* footer */
+    footer {
+        padding: 2rem;
+        flex-direction: column-reverse;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+    footer nav{
+        margin-bottom: 1.5rem;
+    }
+    footer nav a svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .layout{
+        grid-template-columns: repeat(2, 2fr) 1fr;
+        grid-template-rows: auto 40vh auto auto;
+        grid-template-areas:
+            "menu menu menu"
+            "parallax parallax publicidad"
+            "contenido contenido publicidad"
+            "pie pie pie"
+        ;
+    }
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .galeria img:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(3){
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    .galeria img:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeria img:nth-child(5){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .galeria img:nth-child(6){
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .galeria img:nth-child(7){
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .galeria img:nth-child(8){
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    /* footer */
+    footer {
+        padding: 2rem;
+        flex-direction: row;
+    }
+    footer p{
+        font-size: 1.4rem;
+    }
+    footer nav a svg{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+/* desktop */
+@media screen and (min-width: 1024px){
+    .layout{
+        grid-template-columns: repeat(2, 2fr) 1fr;
+        grid-template-rows: auto 50vh auto auto;
+        grid-template-areas:
+            "menu menu menu"
+            "parallax parallax publicidad"
+            "contenido contenido publicidad"
+            "pie pie pie"
+        ;
+    }
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .galeria img:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(3){
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    .galeria img:nth-child(4){
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(5){
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .galeria img:nth-child(6){
+        grid-column: 4/5;
+        grid-row: 2/4;
+    }
+    .galeria img:nth-child(7){
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .galeria img:nth-child(8){
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    /* footer */
+    footer {
+        padding: 3rem;
+        flex-direction: row;
+    }
+    footer p{
+        font-size: 1.6rem;
+    }
+    footer nav a svg{
+        width: 3rem;
+        height: 3rem;
+    }
+}
