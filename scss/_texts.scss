@@ -1,0 +1,44 @@
+$fontWeights:(
+    "normal": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 600,
+);
+
+@for $i from 1 through 3 {
+    h#{$i} {
+        font-size: 8rem - 2 * $i;
+    }
+}
+
+.texts {
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: $orange;
+    letter-spacing: 0.5rem;
+}
+h1{
+    @extend .texts;
+    color: $lightOrange;
+    letter-spacing: 1rem;
+    font-weight: map-get($fontWeights, "bold");
+}
+h2{
+    @extend .texts;
+    font-weight: map-get($fontWeights, "medium");
+}
+h3{
+    @extend .texts;
+    text-align: left;
+    font-weight: map-get($fontWeights, "regular");
+}
+p{
+    font-weight: map-get($fontWeights, "normal");
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    text-align: justify;
+    font-size: 1.6rem;
+    color: $lightBrown;
+}
