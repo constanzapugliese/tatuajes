@@ -1,0 +1,25 @@
+$orange: #BF7960;
+$lightOrange: #F2C4B3;
+$lightBrown: #733A26;
+$darkBrown:#401E17;
+$black: #0D0D0D;
+
+$socialMedia:(
+    "facebook": blue,
+    "instagram": violet,
+    "whatsapp": white,
+);
+
+@each $icon, $color in $socialMedia{
+    .bi-#{$icon}{
+        color: $color;
+    }
+}
+
+@mixin themeColors($theme){
+    @if $theme == "light"{
+        background-color: $darkBrown;
+    } @else {
+        background-color: $black;
+    }
+}
