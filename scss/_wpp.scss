@@ -1,0 +1,27 @@
+$containerSize: 5rem;
+
+.popup-wpp {
+    width: $containerSize;
+    height: $containerSize;
+    background-color: green;
+    padding: 0.5rem;
+    border-radius: 70%;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        svg {
+            width: $containerSize/2;
+            height: $containerSize/2;
+        }
+    }
+}
