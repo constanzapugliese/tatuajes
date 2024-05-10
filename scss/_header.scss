@@ -1,0 +1,10 @@
+header {
+    @include themeColors($theme: 'light');
+    padding: 1rem;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
