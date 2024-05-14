@@ -68,6 +68,13 @@ header nav ul li a{
 header nav ul li a:hover, footer nav a svg:hover{
     color: #F2C4B3;
 }
+#nosotros .img{
+    color: #BF7960;
+    transition: color 2s;
+}
+#nosotros .img:hover{
+    color: #F2C4B3;
+}
 .color-icon{
     color: #BF7960!important;
 }
