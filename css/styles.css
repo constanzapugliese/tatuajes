@@ -70,10 +70,10 @@ header nav ul li a:hover, footer nav a svg:hover{
 }
 #nosotros .img{
     color: #BF7960;
-    transition: color 2s;
+    transition: width 2s;
 }
 #nosotros .img:hover{
-    color: #F2C4B3;
+    width: 10px;
 }
 .color-icon{
     color: #BF7960!important;
